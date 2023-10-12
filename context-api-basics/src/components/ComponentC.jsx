@@ -6,29 +6,27 @@ const ComponentC = () => {
     // const {firstName, lastName}  = useContext(FirstNameContext);
 
     return (
-    <div>
+    <>
         // <h1>Hello, {firstName} {lastName}</h1>
 
 
         <FirstNameContext.Consumer>
-        {
-            (firstName)=>{
-                return(
-                    <LastNameContext.Consumer>
-                    {
-                        (lastName)=>{
-                            return(
-                                <h1>Hello, {firstName}{lastName}</h1>
-                            )
-                        }
+        {(firstName)=>{
+            return(
+                <LastNameContext.Consumer>
+                {(lastName)=>{
+                    return(
+                            <h1>Hello, {firstName}{lastName}</h1>
+                        )
                     }
-                    </LastNameContext.Consumer>
-                )
+                }
+                </LastNameContext.Consumer>
+            )
             }
         }
         </FirstNameContext.Consumer>
 
-    </div>
+    </>
     )
 }
 
