@@ -3,14 +3,14 @@ import { FirstNameContext, LastNameContext } from '../App'
 
 const ComponentC = () => {
 
-    // const {firstName, lastName}  = useContext(FirstNameContext);
+    const {firstName, lastName}  = useContext(FirstNameContext);
 
     return (
     <>
-        // <h1>Hello, {firstName} {lastName}</h1>
+        <h1>Hello, {firstName} {lastName}</h1>
 
 
-        <FirstNameContext.Consumer>
+        {/*<FirstNameContext.Consumer>
         {(firstName)=>{
             return(
                 <LastNameContext.Consumer>
@@ -24,7 +24,7 @@ const ComponentC = () => {
             )
             }
         }
-        </FirstNameContext.Consumer>
+    </FirstNameContext.Consumer>*/}
 
     </>
     )

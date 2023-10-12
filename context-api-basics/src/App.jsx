@@ -7,21 +7,21 @@ const LastNameContext = React.createContext();
 
 function App() {
 
-  // const firstName="Allan";
-  // const lastName="Fernandes";
+  const firstName="Allan";
+  const lastName="Fernandes";
 
   return (
     <>
-      {/*<FirstNameContext.Provider value={{firstName, lastName}}>
+      <FirstNameContext.Provider value={{firstName, lastName}}>
         <ComponentA/>
-      </FirstNameContext.Provider> */  } 
+      </FirstNameContext.Provider>
       
       
-      <FirstNameContext.Provider value={"allan"}>
+      {/*<FirstNameContext.Provider value={"allan"}>
           <LastNameContext.Provider value={"fernandes"}>
             <ComponentA/>
           </LastNameContext.Provider>
-      </FirstNameContext.Provider>
+      </FirstNameContext.Provider>*/}
 
     </>
   )
